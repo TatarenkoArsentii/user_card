@@ -7,24 +7,25 @@ body > * {
     box-sizing: border-box;
 }
 
+/* position */
+
 .container {
     border-radius: 30px;
     width: 400px;
-    min-height: 500px;
+    min-height: 600px;
     border: 1px solid black;
     overflow: hidden;
+    position: relative;
 }
 
 .bg_img > img {
     width: 100%;
     height: 200px;
-
 }
 
-.user_info_wrap {
-    
-    position: relative;
-    top: -100px;
+.user_wrap {
+    position: absolute;
+    top: 100px;
 }
 
 #user_photo {
@@ -37,6 +38,7 @@ body > * {
 .user_name {
     margin-top: 10px;
     text-transform: uppercase;
+    font-size: 1.5em;
 }
 
 .user_link {
@@ -45,17 +47,15 @@ body > * {
 }
 
 .user_descr {
-    padding: 20px;  
-    
+    padding: 20px; 
 }
 
 .user_social {
     width: 100%;
-    
 }
 
 .user_social {
-    margin-bottom: 30px;
+    margin-top: 50px;
 }
 
 .user_social > img {
@@ -66,5 +66,75 @@ body > * {
 
 .user_social > img + img {
     margin-left: 20px;
-    
 }
+
+/* grid */
+
+/* .container {
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+    grid-template-rows: repeat(10,10%);
+    border-radius: 30px;
+    width: 400px;
+    height: 550px;
+    border: 1px solid black;
+    overflow: hidden;
+}
+
+.bg_img {
+    grid-column: 1/-1;
+    grid-row: 1/4;
+}
+
+.bg_img > img{
+    width: 100%;
+    height: 100%;
+}
+
+.user_wrap {
+    grid-template-rows: repeat(5,20%);
+    grid-row: 2;
+    grid-column: 1 / -1;
+    padding: 10px;
+}
+
+#user_photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid white; 
+}
+
+.user_social > img {
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+}
+
+.user_info_cont {
+    display: grid;
+    width: 400px;
+    height: 200px;
+    grid-template-columns: repeat(3,32%);
+    grid-template-rows: repeat(5,20%);
+}
+
+.user_name {
+    grid-row: 1;
+    grid-column: 2;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.user_link {
+    grid-row: 2;
+    grid-column: 2;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.user_descr {
+    grid-row: 3;
+    grid-column: 1/-1;
+    padding: 10px;
+}    */
+
